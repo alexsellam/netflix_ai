@@ -3,8 +3,8 @@ import { AppBar, IconButton, Toolbar, Drawer, Button, Avatar, useMediaQuery } fr
 import { Menu, AccountCircle, Brightness4, Brightness7 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { ClassNames } from '@emotion/react';
-import {useTheme } from '@mui/material/styles';
-import {SideBar}  from '..';
+import { useTheme } from '@mui/material/styles';
+import { Sidebar }  from '..';
 import useStyles from './styles';
 
 const NavBar = () => {
@@ -60,7 +60,6 @@ const NavBar = () => {
                   anchor="right"
                   open={mobileOpen}
                   onClose= {()=> setMobileOpen((prevMobileOpen) => !prevMobileOpen)}
-                  className={classes.drawerBackground}
                   classes= {{paper: classes.drawerPaper}}
                   ModalProps={{keepMounted: true }}
                   >
